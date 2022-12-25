@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src=""></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,13 +32,13 @@
     </header>
     <main>
       <section class="transactions">
-        <div class="section_container">
-          <div class="head_left">
-            <h2 class="current_balance">Current Balance</h2>
-            <p id="date">Date will be shown here</p>
-          </div>
-          <div class="transaction_container">
-            <div class="transaction_info">
+        <div class="head_left">
+          <h2 class="current_balance">Current Balance</h2>
+          <p id="date">Date will be shown here</p>
+        </div>
+        <div class="section_container left">
+          <div class="transaction_container with_border">
+            <div class="transaction_info type_deposit">
               <p id="--movement">MovementInfo</p>
             </div>
             <p id="--movement_date">Date will be shown here</p>

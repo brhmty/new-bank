@@ -6,16 +6,23 @@
   background-color: variables.$color_transaction_background;
   display: flex;
   align-items: center;
-  border-radius: variables.$border_radius_componenet
-    variables.$border_radius_componenet 0 0;
   margin-bottom: 1px;
+  &.with_border {
+    border-radius: variables.$border_radius_componenet
+      variables.$border_radius_componenet 0 0;
+  }
 
   .transaction_info {
     @include mixins.width_height(fit-content, 4vh);
     display: flex;
     border-radius: 15px;
     margin: 0px 10px;
-    background-color: variables.$color_gradient_close_end;
+    &.type_deposit {
+      background-color: variables.$color_gradient_request_end;
+    }
+    &.type_withdrawal {
+      background-color: variables.$color_gradient_close_end;
+    }
   }
 
   .transaction_amount {

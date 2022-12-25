@@ -23,6 +23,15 @@
     align-self: center;
   }
 
+  #--in,
+  #--interest {
+    color: variables.$color_gradient_request_end;
+  }
+
+  #--out {
+    color: variables.$color_gradient_close_end;
+  }
+
   .sort {
     margin-left: auto;
     display: flex;

@@ -13,6 +13,7 @@ section {
   margin-right: 10px;
 }
 
-.section_container {
+.section_container.left {
   height: 81vh;
+  overflow-y: scroll;
 }

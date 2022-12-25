@@ -29,6 +29,7 @@ main {
   height: 85vh;
   display: flex;
   margin-top: 5vh;
+  visibility: hidden;
 }
 
 section {
@@ -46,8 +47,9 @@ section {
   margin-right: 10px;
 }
 
-.section_container {
+.section_container.left {
   height: 81vh;
+  overflow-y: scroll;
 }
 
 .footer_left {
@@ -69,6 +71,13 @@ section {
   font-size: 1.6em;
   margin-right: 20px;
   align-self: center;
+}
+.footer_left #--in,
+.footer_left #--interest {
+  color: #3fb075;
+}
+.footer_left #--out {
+  color: #e52c51;
 }
 .footer_left .sort {
   margin-left: auto;
@@ -144,6 +153,7 @@ section {
   color: white;
   font-weight: bold;
   align-self: center;
+  white-space: nowrap;
   margin: 0px 10px;
 }
 
@@ -240,8 +250,10 @@ fieldset legend {
   background-color: white;
   display: flex;
   align-items: center;
-  border-radius: 10px 10px 0 0;
   margin-bottom: 1px;
+}
+.transaction_container.with_border {
+  border-radius: 10px 10px 0 0;
 }
 .transaction_container .transaction_info {
   width: -webkit-fit-content;
@@ -251,6 +263,11 @@ fieldset legend {
   display: flex;
   border-radius: 15px;
   margin: 0px 10px;
+}
+.transaction_container .transaction_info.type_deposit {
+  background-color: #3fb075;
+}
+.transaction_container .transaction_info.type_withdrawal {
   background-color: #e52c51;
 }
 .transaction_container .transaction_amount {
