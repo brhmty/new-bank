@@ -1,0 +1,20 @@
+@use "../abstracts/variables";
+
+fieldset {
+  display: flex;
+  height: variables.$component-height;
+  border: transparent;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    > label {
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+
+  legend {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,64 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.footer_left {
+  display: flex;
+  justify-content: flex-start;
+  height: variables.$line-height;
+
+  > label {
+    font-weight: lighter;
+    font-size: variables.$label_margin_duetofontsize;
+    margin-right: 3px;
+    margin-top: variables.$label_margin_duetofontsize;
+    align-self: center;
+  }
+
+  #--in,
+  #--out,
+  #--interest {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-right: 20px;
+    align-self: center;
+  }
+
+  .sort {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vh;
+
+    #--sort_icon {
+      text-align: center;
+      align-self: center;
+    }
+
+    #--sort {
+      margin: 0px;
+      font-weight: lighter;
+      font-size: variables.$label_margin_duetofontsize;
+    }
+  }
+}
+
+.footer_right {
+  display: flex;
+  justify-content: flex-end;
+  height: variables.$line-height;
+  margin-top: -1vh;
+
+  #--logged,
+  #--time {
+    align-self: center;
+  }
+
+  #--logged {
+    font-weight: lighter;
+    margin-right: 3px;
+  }
+
+  #--time {
+    font-weight: bold;
+  }
+}

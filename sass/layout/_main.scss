@@ -1,0 +1,10 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+main {
+  @include mixins.center;
+  width: 70%;
+  height: 85vh;
+  display: flex;
+  margin-top: variables.$line-height;
+}

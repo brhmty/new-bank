@@ -1,0 +1,8 @@
+@use "../abstracts/variables";
+
+body {
+  width: variables.$width_full;
+  height: variables.$height_full;
+  margin: 0;
+  background-color: variables.$color_background_main;
+}

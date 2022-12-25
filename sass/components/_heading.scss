@@ -1,0 +1,48 @@
+@use "../abstracts/variables";
+
+#--greeting {
+  margin-left: 1%;
+  width: 20%;
+}
+
+.head_left,
+.head_right {
+  display: flex;
+  align-content: center;
+  height: variables.$component-height;
+  margin-bottom: 6vh;
+}
+
+.head_left {
+  flex-direction: column;
+}
+
+.head_right {
+  justify-content: flex-end;
+}
+
+#date {
+  font-weight: lighter;
+  color: variables.$color_date;
+  margin-top: 0px;
+}
+
+.current_balance {
+  margin-bottom: 0px;
+}
+
+#--movement {
+  color: variables.$color_transaction_background;
+  font-weight: bold;
+  align-self: center;
+  margin: 0px 10px;
+}
+
+#--movement_date {
+  margin-right: 10px;
+}
+
+#--movement_amount {
+  margin-right: 30px;
+  text-align: right;
+}

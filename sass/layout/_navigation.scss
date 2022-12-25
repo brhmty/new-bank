@@ -1,0 +1,16 @@
+@use "../abstracts/mixins";
+
+nav {
+  @include mixins.width_height(100%, 10vh);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #user_login {
+    margin-right: 1%;
+    display: inline-flex;
+    justify-content: flex-end;
+    text-align: end;
+    width: 20%;
+  }
+}

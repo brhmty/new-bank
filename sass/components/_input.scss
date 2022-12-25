@@ -1,0 +1,31 @@
+@use "../abstracts/variables";
+
+input {
+  width: 30%;
+  border: transparent;
+  border-radius: 50px;
+  margin: 0 5px;
+  line-height: variables.$line-height;
+}
+
+#--transfer_to,
+#--transfer_amount,
+#--request_loan,
+#--confirm_user,
+#--confirm_pin {
+  width: 90%;
+}
+
+#--transfer_to,
+#--transfer_amount {
+  background-color: variables.$color_transfer_input;
+}
+
+#--request_loan {
+  background-color: variables.$color_request_input;
+}
+
+#--confirm_user,
+#--confirm_pin {
+  background-color: variables.$color_close_input;
+}

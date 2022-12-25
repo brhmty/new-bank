@@ -1,0 +1,18 @@
+@use "../abstracts/mixins";
+
+section {
+  @include mixins.width_height(50%, 85vh);
+  display: flex;
+  flex-direction: column;
+}
+
+.operations {
+  margin-left: 10px;
+}
+.transactions {
+  margin-right: 10px;
+}
+
+.section_container {
+  height: 81vh;
+}

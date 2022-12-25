@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src=""></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3 id="--greeting">Greeting text will be shown here</h3>
+        <div id="--icon_bank"><i class="fa-solid fa-vault fa-2xl"></i></div>
+        <div id="user_login">
+          <form class="user_info" action="">
+            <input type="text" id="--user" placeholder="user" />
+            <input type="text" id="--pin" placeholder="pin" />
+            <button type="submit" id="--log_in">
+              <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="transactions">
+        <div class="section_container">
+          <div class="head_left">
+            <h2 class="current_balance">Current Balance</h2>
+            <p id="date">Date will be shown here</p>
+          </div>
+          <div class="transaction_container">
+            <div class="transaction_info">
+              <p id="--movement">MovementInfo</p>
+            </div>
+            <p id="--movement_date">Date will be shown here</p>
+            <div class="transaction_amount">
+              <p id="--movement_amount">Movement amount will be shown here</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer_left">
+          <label for="--in">IN:</label>
+          <p id="--in">In</p>
+          <label for="--out">OUT:</label>
+          <p id="--out">Out</p>
+          <label for="--interest">INTEREST:</label>
+          <p id="--interest">interest</p>
+          <div class="sort">
+            <label for="--sort" id="--sort_icon"
+              ><i class="fa-sharp fa-solid fa-arrow-down"></i
+            ></label>
+            <p id="--sort">SORT</p>
+          </div>
+        </div>
+      </section>
+      <section class="operations">
+        <div class="section_container">
+          <div class="head_right">
+            <h1 id="--total_money">Total Money will be shown here</h1>
+          </div>
+          <div class="operation">
+            <div class="div_form">
+              <form action="" class="mny_transform">
+                <fieldset>
+                  <legend>Transfer Money</legend>
+                  <div>
+                    <input type="text" id="--transfer_to" />
+                    <label for="--transfer_to">Transfer to</label>
+                  </div>
+                  <div class="transfet_amount">
+                    <input type="number" id="--transfer_amount" />
+                    <label for="--transfer_amount">Amount</label>
+                  </div>
+                  <button type="submit" class="__transfer">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="operation">
+            <div class="div_form">
+              <form action="" class="rqst_loan">
+                <fieldset>
+                  <legend>Request loan</legend>
+                  <div>
+                    <input type="number" id="--request_loan" />
+                    <label for="--request_loan">Amount</label>
+                  </div>
+                  <button type="submit" class="__request">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="operation">
+            <div class="div_form">
+              <form action="" class="cls_account">
+                <fieldset>
+                  <legend>Close account</legend>
+                  <div>
+                    <input type="text" id="--confirm_user" />
+                    <label for="--confirm_user">Confirm user</label>
+                  </div>
+                  <div>
+                    <input type="number" id="--confirm_pin" />
+                    <label for="--confirm_user">Amount</label>
+                  </div>
+                  <button type="submit" class="__close">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer_right">
+          <p id="--logged">You will be logged out in:</p>
+          <p id="--time">Time will be shown here</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

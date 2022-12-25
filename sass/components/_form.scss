@@ -1,0 +1,29 @@
+@use "../abstracts/variables";
+
+form {
+  width: auto;
+  justify-content: space-evenly;
+  padding: 3vh 3%;
+  border-radius: variables.$border_radius_componenet;
+}
+
+.mny_transform {
+  background: linear-gradient(
+    variables.$color_gradient_transfer_start,
+    variables.$color_gradient_transfer_end
+  );
+}
+
+.rqst_loan {
+  background: linear-gradient(
+    variables.$color_gradient_request_start,
+    variables.$color_gradient_request_end
+  );
+}
+
+.cls_account {
+  background: linear-gradient(
+    variables.$color_gradient_close_start,
+    variables.$color_gradient_close_end
+  );
+}

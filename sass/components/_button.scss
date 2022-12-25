@@ -1,0 +1,13 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+button {
+  @include mixins.width_height(15%, variables.$line-height);
+  border-radius: 10px;
+  border: transparent;
+}
+
+#--log_in {
+  background-color: transparent;
+  border: transparent;
+}
